@@ -23,13 +23,26 @@
 }
 
 .store-description {
-    text-align: center;
-    padding: 20px;
-
-    h2 {
-        margin-bottom: 10px;
-    }
+    background-color: #F5F5F5; /* Complementa a cor do elemento #nome */
+    color: #333; /* Mantém a cor do texto consistente */
+    font-size: 18px; /* Ligeiramente menor que o título para hierarquia visual */
+    text-align: center; /* Continua centralizado */
+    padding: 15px 20px; /* Espaçamento confortável */
+    margin: 20px auto; /* Espaçamento uniforme em torno */
+    border-radius: 4px; /* Cantos arredondados para combinar com #nome */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra para profundidade, consistente com #nome */
+    max-width: 90%; /* Largura máxima para manter o texto legível */
+    line-height: 1.6; /* Espaçamento da linha para melhor leitura */
+    border: 1px solid #837163; /* Borda sutil para definir o elemento, usando a cor do #nome */
 }
+
+.store-description h2 {
+    font-size: 22px; /* Tamanho da fonte maior para o título da seção */
+    margin-bottom: 12px; /* Espaço extra abaixo do título */
+    color: #837163; /* Cor do título para se destacar do texto */
+    font-weight: bold; /* Mantém o peso da fonte para título */
+}
+
 
 #nome {
     background-color: #837163; /* ou qualquer outra cor que você esteja usando */
