@@ -1,0 +1,56 @@
+.logo-image {
+    max-width: 92%; /* Ajuste este valor conforme necessário */
+    border-radius: 4px;
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem se o col for maior que a imagem */
+}
+
+.photo-gallery {
+    width: 89%;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+    
+
+    img.gallery-image {
+        width: 100%;
+        display: none;
+        /* Ocultar todas as imagens inicialmente */
+        transition: opacity 0.5s ease;
+    }
+}
+
+.store-description {
+    text-align: center;
+    padding: 20px;
+
+    h2 {
+        margin-bottom: 10px;
+    }
+}
+
+#nome {
+    background-color: #837163; /* ou qualquer outra cor que você esteja usando */
+    color: #333333; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    text-align: center; /* Alinhamento do texto */
+    padding: 5px 20px; /* Reduzir o espaçamento interno (vertical horizontal) */
+    margin: 10px auto; /* Margem superior e inferior reduzida, centralizado horizontalmente */
+    border-radius: 4px; /* Borda suavemente arredondada */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil para profundidade */
+    max-width: 90%; /* Ajuste para a largura máxima que o elemento deve ocupar */
+    display: block; /* Isso vai permitir que 'margin: auto' funcione para centralizar horizontalmente */
+}
+
+ion-badge {
+    position: relative;
+    left: 40px;
+    top: -50px;
+}
+
+ion-fab {
+    right: 25px;
+}

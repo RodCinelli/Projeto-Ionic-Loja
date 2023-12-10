@@ -1,0 +1,39 @@
+<ion-content>
+  <!-- Botão e Badge de Likes -->
+  <ion-fab vertical="top" horizontal="end">
+    <ion-fab-button (click)="addlikes()">
+      <ion-icon name="thumbs-up-sharp"></ion-icon>
+    </ion-fab-button>
+    <ion-badge color="danger">{{likes}}</ion-badge>
+  </ion-fab>
+
+  <!-- Grid para Layout -->
+  <ion-grid>
+    <!-- Imagem do Logo -->
+    <ion-row>
+      <ion-col id="fotoPerfilCol">
+        <img src="assets/cinelli-store-logo.png" alt="Cinelli Store Logo" class="logo-image">
+      </ion-col>
+    </ion-row>
+
+    <!-- Título da Página -->
+    <ion-row>
+      <ion-col id="nome">Vestuário e Calçados</ion-col>
+    </ion-row>
+  </ion-grid>
+
+    <!-- Galeria de Fotos -->
+  <!-- Galeria de Fotos -->
+<div class="photo-gallery">
+  <img src="assets/loja masculina.png" alt="Imagem da Nossa loja" class="gallery-image">
+  <img src="assets/roupas masculinas.png" alt="Algum de nossos produtos" class="gallery-image">
+  <img src="assets/escolha de produtos.png" alt="Um cliente escolhendo produtos" class="gallery-image">
+</div>
+
+
+  <!-- Descrição da Loja -->
+  <div class="store-description">
+    <h2>Sobre a Cinelli Store</h2>
+    <p>A Cinelli Store oferece uma ampla gama de roupas e calçados masculinos. Visite-nos para descobrir as últimas tendências!</p>
+  </div>
+</ion-content>
