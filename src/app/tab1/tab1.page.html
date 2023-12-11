@@ -22,16 +22,24 @@
     </ion-row>
   </ion-grid>
 
-    <!-- Galeria de Fotos -->
-  <!-- Galeria de Fotos -->
-<div class="photo-gallery">
-  <img src="assets/loja masculina.png" alt="Imagem da Nossa loja" class="gallery-image">
-  <img src="assets/roupas masculinas.png" alt="Algum de nossos produtos" class="gallery-image">
-  <img src="assets/escolha de produtos.png" alt="Um cliente escolhendo produtos" class="gallery-image">
+ <!-- Galeria de Fotos -->
+ <div class="photo-gallery" #photoGallery>
+  <!-- Seta para Esquerda -->
+  <ion-icon name="chevron-back-circle" class="gallery-arrow left-arrow" (click)="previousImage()"></ion-icon>
+  <img src="assets/loja masculina.png" alt="Imagem da Nossa loja" #galleryImage>
+  <img src="assets/roupas masculinas.png" alt="Algum de nossos produtos" #galleryImage>
+  <img src="assets/escolha de produtos.png" alt="Um cliente escolhendo produtos" #galleryImage>
+  <!-- Seta para Direita -->
+  <ion-icon name="chevron-forward-circle" class="gallery-arrow right-arrow" (click)="nextImage()"></ion-icon>
 </div>
 
 
-  <!-- Descrição da Loja -->
+<!-- Indicadores do Carrossel -->
+<div class="carousel-indicators">
+  <span *ngFor="let image of images; let i = index" [class.active]="i === currentImageIndex" (click)="showImage(i)"></span>
+</div>
+
+<!-- Descrição da Loja -->
   <div class="store-description">
     <h2>Sobre a Cinelli Store:</h2>
     <p>A Cinelli Store oferece uma ampla gama de roupas e calçados masculinos. Visite-nos para descobrir as últimas tendências!</p>
