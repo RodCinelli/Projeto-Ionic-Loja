@@ -13,14 +13,14 @@ export class Tab2Page {
   produtos: Produto[] = [
     {
       nome: 'Camiseta Polo Camisa Polo Masculina Básica Alta Qualidade',
-      imagem: 'assets/images/produto2.png',
+      imagem: 'assets/images/produto1.png',
       preco: 79.99,
       quantidade: 0
     },
 
     {
       nome: 'Kit 3 Camisetas Parvori Roupa Academia Masculina Dry Fit',
-      imagem: 'assets/images/produto1.png',
+      imagem: 'assets/images/produto2.png',
       preco: 69.99,
       quantidade: 0
     },
