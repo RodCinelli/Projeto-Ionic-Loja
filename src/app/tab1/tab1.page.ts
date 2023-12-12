@@ -45,9 +45,4 @@ export class Tab1Page implements AfterViewInit {
     this.currentImageIndex = newIndex;
     imagesArray[this.currentImageIndex].nativeElement.style.display = 'block';
   }
-
-  // Incrementar o contador de curtidas
-  addlikes() {
-    this.likes++;
-  }
 }
