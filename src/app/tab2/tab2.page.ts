@@ -12,12 +12,18 @@ import { Produto } from '../models/produto.model';
 export class Tab2Page {
   produtos: Produto[] = [
     {
-      nome: 'Kit 3 Camisetas Parvori Roupa Academia Masculina Dry Fit',
-      imagem: 'assets/images/produto1.png',
+      nome: 'Camiseta Polo Camisa Polo Masculina Básica Alta Qualidade',
+      imagem: 'assets/images/produto2.png',
       preco: 79.99,
       quantidade: 0
     },
-    // ... Outros produtos
+
+    {
+      nome: 'Kit 3 Camisetas Parvori Roupa Academia Masculina Dry Fit',
+      imagem: 'assets/images/produto1.png',
+      preco: 69.99,
+      quantidade: 0
+    },
   ];
 
   constructor(
