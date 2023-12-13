@@ -12,7 +12,7 @@ export class Tab3Page {
   produtos: ProdutoTab3[] = [
     {
       nome: 'Camisa Social Slim Empório Colombo',
-      imagem: 'assets/images/produtodesconto1.png',
+      imagem: 'assets/produtos/produtodesconto1.png',
       precoOriginal: 79.90, // Preço antes do desconto
       preco: 59.90, // Preço com desconto
       quantidade: 0
@@ -20,7 +20,7 @@ export class Tab3Page {
 
     {
       nome: 'Camisa Gola Polo Red Bull F1 Malha Piquet',
-      imagem: 'assets/images/produtodesconto2.png',
+      imagem: 'assets/produtos/produtodesconto2.png',
       precoOriginal: 69.90, // Preço antes do desconto
       preco: 50.00, // Preço com desconto
       quantidade: 0
@@ -28,7 +28,7 @@ export class Tab3Page {
 
     {
       nome: 'Camisa Poliéster Masculina P/ Academia Exercícios',
-      imagem: 'assets/images/produtodesconto3.png',
+      imagem: 'assets/produtos/produtodesconto3.png',
       precoOriginal: 45.90, // Preço antes do desconto
       preco: 35.90, // Preço com desconto
       quantidade: 0
@@ -36,7 +36,7 @@ export class Tab3Page {
 
     {
       nome: 'Regata Oversized Masculina Brooklyn Bronx New York',
-      imagem: 'assets/images/produtodesconto4.png',
+      imagem: 'assets/produtos/produtodesconto4.png',
       precoOriginal: 69.90, // Preço antes do desconto
       preco: 49.90, // Preço com desconto
       quantidade: 0
@@ -44,7 +44,7 @@ export class Tab3Page {
 
     {
       nome: 'Calça Jeans Masculina 8 Bolsos Command Ártico',
-      imagem: 'assets/images/produtodesconto5.png',
+      imagem: 'assets/produtos/produtodesconto5.png',
       precoOriginal: 170.00, // Preço antes do desconto
       preco: 145.90, // Preço com desconto
       quantidade: 0
@@ -52,7 +52,7 @@ export class Tab3Page {
 
     {
       nome: 'Bermuda Short Masculino Cargo Sarja Brim Camuflada Militar',
-      imagem: 'assets/images/produtodesconto6.png',
+      imagem: 'assets/produtos/produtodesconto6.png',
       precoOriginal: 78.90, // Preço antes do desconto
       preco: 59.00, // Preço com desconto
       quantidade: 0
@@ -60,7 +60,7 @@ export class Tab3Page {
 
     {
       nome: 'Sapatenis Masculino Polo Plus Original',
-      imagem: 'assets/images/produtodesconto7.png',
+      imagem: 'assets/produtos/produtodesconto7.png',
       precoOriginal: 97.90, // Preço antes do desconto
       preco: 59.90, // Preço com desconto
       quantidade: 0
