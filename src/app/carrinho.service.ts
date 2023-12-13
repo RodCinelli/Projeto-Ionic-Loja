@@ -1,8 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Produto } from './models/produto.model';
+import { ProdutoTab2 } from './models/produtotab2.model';
+import { ProdutoTab3 } from './models/produtotab3.model';
 
-interface ProdutoCarrinho {
-  produto: Produto;
+type ProdutoCarrinho = ProdutoTab2 | ProdutoTab3;
+
+interface ItemCarrinho {
+  produto: ProdutoCarrinho;
   quantidade: number;
 }
 
@@ -10,17 +13,19 @@ interface ProdutoCarrinho {
   providedIn: 'root'
 })
 export class CarrinhoService {
-  private itensCarrinho: ProdutoCarrinho[] = [];
+  private itensCarrinho: ItemCarrinho[] = [];
 
   constructor() { }
 
-  adicionarAoCarrinho(produto: Produto) {
+  adicionarAoCarrinho(produto: ProdutoCarrinho) {
     const itemExistente = this.itensCarrinho.find(item => item.produto.nome === produto.nome);
     if (itemExistente) {
-      itemExistente.quantidade += 1;
+      itemExistente.quantidade += produto.quantidade;
     } else {
-      this.itensCarrinho.push({ produto, quantidade: 1 });
+      this.itensCarrinho.push({ produto, quantidade: produto.quantidade });
     }
+    // Reseta a quantidade do produto após adicioná-lo ao carrinho
+    produto.quantidade = 0;
   }
 
   removerItem(index: number) {
